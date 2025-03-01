@@ -21,9 +21,20 @@
 					requireValidation: false
 				}, {
 					file: './wl4patches.zip', //zip containing patches
-					name: 'Wario Land 4 Rumble + Perfect Patches',
-					description: 'Adds djedditts Jungle Rumble and Kertras Perfect Version patches',
-					outputName: 'WL4RUMBLEPERFECT', //patched ROM name
+					patches: [
+						{
+							file: 'wl4-rumble_1.0.0.ips',
+							name: 'Wario Land 4 Jungle Rumble',
+							description: 'Adds djedditts Jungle Rumble patch',
+							optional: true
+						},
+						{
+							file: 'WL4-Perfect.ips',
+							name: 'Wario Land 4 Perfect Version',
+							description: 'Adds Kertras Perfect Version patch',
+							optional: true
+						}
+					]
 				});
 			} catch (err) {
 				var message = err.message;
