@@ -19,23 +19,26 @@
 				RomPatcherWeb.initialize({
 					language: 'en', //default: en
 					requireValidation: false
-				}, {
+				},
+				{
 					file: './wl4patches.zip', //zip containing patches
 					patches: [
 						{
 							file: 'wl4rumble.ips',
 							name: 'Wario Land 4 Jungle Rumble',
-							description: 'Adds djedditts Jungle Rumble patch'
+							description: 'Adds djedditts Jungle Rumble patch',
+							outputName: 'WL4RumblePlus',
+							outputExtension: 'gba',
 						},
 						{
 							file: 'wl4perfect.ips',
 							name: 'Wario Land 4 Perfect Version',
 							description: 'Adds Kertras Perfect Version patch',
+							outputName: 'WL4PerfectPlus',
+							outputExtension: 'gba',
 							optional: true,
 						}
-					],
-					outputName: 'WL4RumblePlus',
-					outputExtension: 'gba',
+					]
 				});
 			} catch (err) {
 				var message = err.message;
