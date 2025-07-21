@@ -21,8 +21,22 @@
 					requireValidation: false
 				},
 				{
-					file: './wl4patches.zip', //zip containing patches
+					file: './patches.zip', //zip containing patches
 					patches: [
+						{
+							file: 'WL4-Perfect.ips',
+							name: 'Wario Land 4 Perfect Version',
+							description: 'Adds Kertras Perfect Version patch v1.0',
+							outputName: 'WL4PerfectVersion',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'wl4-rumble_v1.0.3.ips',
+							name: 'Wario Land 4 Jungle Rumble',
+							description: 'Adds djedditts Jungle Rumble patch v1.0.3',
+							outputName: 'WL4JungleRumble',
+							outputExtension: 'gba',
+						},
 						{
 							file: 'Wario_Land_4_Parallel_World_ver1.03(US).bps',
 							name: 'Wario Land 4 Parallel World',
@@ -38,17 +52,66 @@
 							outputExtension: 'gba',
 						},
 						{
-							file: 'WL4-Perfect.ips',
-							name: 'Wario Land 4 Perfect Version',
-							description: 'Adds Kertras Perfect Version patch v1.0',
-							outputName: 'WL4PerfectVersion',
+							file: 'wario4prac-U.bps',
+							name: 'Wario Land 4 Practice Hack US/EU',
+							description: 'Adds mpus Speedrun Practice ROMHack v1.2, US/EU ROMs Only',
+							outputName: 'WL4PracHackUE',
 							outputExtension: 'gba',
 						},
 						{
-							file: 'wl4-rumble_1.0.0.ips',
-							name: 'Wario Land 4 Jungle Rumble',
-							description: 'Adds djedditts Jungle Rumble patch v1.0.0',
-							outputName: 'WL4JungleRumble',
+							file: 'wario4prac-J.bps',
+							name: 'Wario Land 4 Practice Hack JP',
+							description: 'Adds mpus Speedrun Practice ROMHack v1.2, JP ROMs Only',
+							outputName: 'WL4PracHackJ',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'AGB-BPPE-USA_CartRumble_v1.1.ips',
+							name: 'Pokemon Pinball: R&S USA Cartridge Rumble Patch',
+							description: 'Adds djedditts Cartridge Rumble patch v1.1, US ROMs Only',
+							outputName: 'PKMNPinballRSRumbleU',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'AGB-BPPP-EUR_CartRumble_v1.1.ips',
+							name: 'Pokemon Pinball: R&S EUR Cartridge Rumble Patch',
+							description: 'Adds djedditts Cartridge Rumble patch v1.1, EU ROMs Only',
+							outputName: 'PKMNPinballRSRumbleE',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'AGB-BPPJ-JAP_CartRumble_v1.1.ips',
+							name: 'Pokemon Pinball: R&S JPN Cartridge Rumble Patch',
+							description: 'Adds djedditts Cartridge Rumble patch v1.1, JP ROMs Only',
+							outputName: 'PKMNPinballRSRumbleJ',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'mariomon v1.4.2.bps',
+							name: 'Super MarioMon',
+							description: 'Adds kobazcos Super MarioMon Pokemon Emerald ROMHack v1.4.2',
+							outputName: 'SuperMarioMon',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'emeraldrogue_ex_v2.0.1a.ups',
+							name: 'Pokemon Emerald Rogue EX',
+							description: 'Adds pokabbies Pokemon Emerald Rouge EX Version ROMHack v2.0.1a',
+							outputName: 'PKMNEmeraldRogueEX',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'emeraldrogue_vanilla_v2.0.1a.ups',
+							name: 'Pokemon Emerald Rogue Vanilla',
+							description: 'Adds pokabbies Pokemon Emerald Rouge Vanilla Version ROMHack v2.0.1a',
+							outputName: 'PKMNEmeraldRogueV',
+							outputExtension: 'gba',
+						},
+						{
+							file: 'frlgPlus.bps',
+							name: 'Pokemon FireRed+/LeafGreen+',
+							description: 'Adds deokishisus Pokemon FireRed+/LeafGreen+ ROMHack v1.5.1',
+							outputName: 'PKMNFRLG+',
 							outputExtension: 'gba',
 						}
 					]
